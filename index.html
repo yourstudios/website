@@ -14,7 +14,8 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        
+        <!-- HubSpot Forms Loader -->
+        <script src="https://js.hsforms.net/forms/embed/v2.js" async defer></script>
     </head>
     <body id="page-top">
         <!-- Header-->
@@ -23,15 +24,25 @@
                 <h1 class="fw-bolder display-1" style="font-size: 10rem;">HULA</h1>
                 <div class="text-start mt-4" style="max-width: 300px; margin-left: 0;">
                     <h2>Talk with Hula</h2>
-                    <form>
+                    <form class="form-signup" id="contactForm">
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email" required>
+                            <input 
+                                name="email"
+                                type="email" 
+                                class="form-control"
+                                id="emailAddress"
+                                placeholder="Email" 
+                                aria-label="Email"
+                                required
+                            />
                         </div>
-                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="small">We'll also send you updates as we continue to work on the game.</p>
                         <div class="text-end">
-                            <button type="submit" class="btn btn-light">Submit</button>
+                            <button type="submit" id="submitButton" class="btn btn-light">Submit</button>
                         </div>
                     </form>
+                    <div class="text-end" id="errorMessage" style="display:none;">Error</div>
+                    <div class="text-end text-success" id="successMessage" style="display:none;">Success!</div>
                 </div>
             </div>
         </header>
@@ -110,5 +121,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Character JS -->
         <script src="js/characters.js"></script>
+        <!-- Form JS -->
+        <script src="js/form.js"></script>
     </body>
 </html>

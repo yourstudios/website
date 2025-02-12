@@ -25,31 +25,31 @@
             background-position: center 100%; /* Adjusted to move the image down */
             min-height: 100vh; /* Ensures the header takes up the full viewport height */
         ">
-           <div class="container px-4 text-center">
-        <h1 class="display-1" style="font-size: 14rem; font-family: 'Sour Gummy', cursive; color: #1E90FF; font-weight: 300; opacity: 0.8; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">HULA</h1>
-        <div class="text-start mt-5" style="max-width: 300px; margin-left: 0;"> <!-- Increased margin-top -->
-            <h2>Talk with Hula</h2>
-            <form class="form-signup" id="contactForm">
-                <div class="mb-3">
-                    <input 
-                        name="email"
-                        type="email" 
-                        class="form-control"
-                        id="emailAddress"
-                        placeholder="Email" 
-                        aria-label="Email"
-                        required
-                    />
+            <div class="container px-4 text-center">
+                <h1 class="display-1" style="font-size: 14rem; font-family: 'DynaPuff', cursive; color: #FFC540; opacity: 0.85; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); font-weight: 100;">HULA</h1>
+                <div class="text-start mt-4" style="max-width: 300px; margin-left: 0;">
+                    <h2>Talk with Hula</h2>
+                    <form class="form-signup" id="contactForm">
+                        <div class="mb-3">
+                            <input 
+                                name="email"
+                                type="email" 
+                                class="form-control"
+                                id="emailAddress"
+                                placeholder="Email" 
+                                aria-label="Email"
+                                required
+                            />
+                        </div>
+                        <p class="small">We'll also send you updates as we continue to work on the game.</p>
+                        <div class="text-end">
+                            <button type="submit" id="submitButton" class="btn btn-light">Submit</button>
+                        </div>
+                    </form>
+                    <div class="text-end" id="errorMessage" style="display:none;">Error</div>
+                    <div class="text-end text-success" id="successMessage" style="display:none;">Success!</div>
                 </div>
-                <p class="small">We'll also send you updates as we continue to work on the game.</p>
-                <div class="text-end">
-                    <button type="submit" id="submitButton" class="btn btn-light">Submit</button>
-                </div>
-            </form>
-            <div class="text-end" id="errorMessage" style="display:none;">Error</div>
-            <div class="text-end text-success" id="successMessage" style="display:none;">Success!</div>
-        </div>
-    </div>
+            </div>
         </header>
         <!-- Game section-->
         <section id="about">
